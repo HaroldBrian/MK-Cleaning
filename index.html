@@ -1,660 +1,811 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="MK Cleaning - Service de nettoyage" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="MK Cleaning - Service de nettoyage" />
-  <meta name="author" content="" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <title>MK Cleaning - Service de nettoyage</title>
 
-  <title>MK Cleaning - Service de nettoyage</title>
+    <link href="assets/images/logo.png" rel="icon" />
+    <link href="assets/images/logo.png" rel="apple-touch-icon" />
 
-  <link href="assets/images/logo.png" rel="icon" />
-  <link href="assets/images/logo.png" rel="apple-touch-icon" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+  </head>
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
-  <link rel="stylesheet" href="assets/css/animated.css" />
-  <link rel="stylesheet" href="assets/css/owl.css" />
-</head>
-
-<style>
-  #loader {
-    display: none;
-    width: 20px;
-    height: 20px;
-    border: 4px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 4px solid #ec0c23;
-    animation: spin 2s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
+  <style>
+    #loader {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 4px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 4px solid #ec0c23;
+      animation: spin 2s linear infinite;
     }
 
-    100% {
-      transform: rotate(360deg);
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
-  }
-</style>
+  </style>
 
-<body>
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="/" class="logo">
-              <img src="assets/images/logo.png" alt="logo" />
-              <!-- <h4>MK<span>Cleaning</span></h4> -->
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section">
-                <a href="#top" class="active">Accueil</a>
-              </li>
-              <li class="scroll-to-section"><a href="#about">A Propos</a></li>
-              <li class="scroll-to-section">
-                <a href="#services">Services</a>
-              </li>
-              <li class="scroll-to-section">
-                <a href="#contact">Nous Contacter</a>
-              </li>
-              <li class="scroll-to-section">
-                <div class="main-red-button">
-                  <a href="#contact">Souscrire Maintenant</a>
-                </div>
-              </li>
-            </ul>
-            <a class="menu-trigger">
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+    <!-- ***** Preloader End ***** -->
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Bienvenue chez MK Cleaning</h6>
-                <h2>
-                  Votre Partenaire de <em>Confiance</em> pour un
-                  <span>Environnement </span>impeccable
-                </h2>
-                <p>
-                  Nous comprenons l'importance d'un espace propre et bien
-                  entretenu. Chez <b>MK Cleaning</b>, nous nous engageons à
-                  offrir des services de nettoyage exceptionnels pour répondre
-                  à vos besoins résidentiels et commerciaux.
-                </p>
-
-                <form id="search" action="#contact" method="GET">
-                  <fieldset>
-                    <input type="tel" name="phone_number" class="phone_number" placeholder="Souscrire maintenant"
-                      autocomplete="off" disabled />
-                  </fieldset>
-                  <fieldset>
-                    <button href="#" class="main-button">
-                      Nous contacter
-                    </button>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/cleaning.png" alt="team meeting" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 left-content header-text wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.3s">
-          <div style="margin-bottom: -80px; text-align: center; margin-top: 80px">
-            <h2>Profitez d'un nettoyage de qualité professionnelle</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about">
-    <div class="about-us section">
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <img src="assets/images/about.png" alt="person graphic" />
-            </div>
-          </div>
-          <div class="col-lg-8 align-self-center">
-            <div class="services">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div class="icon">
-                      <img src="assets/images/service-icon-01.png" alt="reporting" />
-                    </div>
-                    <div class="right-text">
-                      <h4>Qualité Exceptionnelle</h4>
-                      <p>
-                        Notre équipe talentueuse garantie des résultats
-                        impeccables.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-                    <div class="icon">
-                      <img src="assets/images/service-icon-02.png" alt="" />
-                    </div>
-                    <div class="right-text">
-                      <h4>Flexibilité</h4>
-                      <p>
-                        Nous personnalisons nos services pour répondre à vos
-                        horaires.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
-                    <div class="icon">
-                      <img src="assets/images/service-icon-03.png" alt="" />
-                    </div>
-                    <div class="right-text">
-                      <h4>Satisfaction Clientèle</h4>
-                      <p>
-                        Votre satisfaction est notre priorité absolue à chaque
-                        service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
-                    <div class="icon">
-                      <img src="assets/images/service-icon-04.png" alt="" />
-                    </div>
-                    <div class="right-text">
-                      <h4>Engagement Écologique</h4>
-                      <p>
-                        Nous utilisons des produits respectueux de
-                        l'environnement.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="our-services section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="left-image">
-              <img src="assets/images/about2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="section-heading">
-              <h2>
-                Profitez d'une <em>Expérience</em> de Nettoyage
-                <span>Professionnelle</span>
-              </h2>
-              <p>
-                Nos services de nettoyage de qualité professionnelle sont
-                conçus pour répondre à toutes vos attentes en matière de
-                propreté et d'hygiène. Notre équipe expérimentée et hautement
-                qualifiée utilise des techniques avancées, des équipements
-                modernes et des produits de nettoyage écologiques pour
-                garantir des résultats impeccables à chaque intervention.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="first-bar progress-skill-bar">
-                  <h4>Qualité Professionnelle</h4>
-                  <!-- <span>100%</span> -->
-                  <div class="filled-bar"></div>
-                  <div class="full-bar"></div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="second-bar progress-skill-bar">
-                  <h4>Satisfaction du client</h4>
-                  <!-- <span>100%</span> -->
-                  <div class="filled-bar"></div>
-                  <div class="full-bar"></div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="third-bar progress-skill-bar">
-                  <h4>Disponibilité et Flexibilité</h4>
-                  <!-- <span>100%</span> -->
-                  <div class="filled-bar"></div>
-                  <div class="full-bar"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="services">
-    <div class="our-portfolio section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <h2>
-                Découvrez nos <em>Services</em> de
-                <span>Nettoyage</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <a href="#">
-              <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                <div class="hidden-content">
-                  <h4>Nettoyage complet</h4>
-                  <p>Toutes les pièces et les surfaces seront néttoyées.</p>
-                </div>
-                <div class="showed-content">
-                  <img src="assets/images/portfolio-image-1.png" alt="" />
-                  <h6>Nettoyage complet</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a href="#">
-              <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                <div class="hidden-content">
-                  <h4>Nettoyage semi complet</h4>
-                  <p>
-                    Uniquement certaines pièces seront néttoyées selon le
-                    choix du client.
-                  </p>
-                </div>
-                <div class="showed-content">
-                  <img src="assets/images/portfolio-image-2.png" alt="" />
-                  <h6>Nettoyage semi complet</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a href="#">
-              <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="hidden-content">
-                  <h4>Nettoyage avec équipements</h4>
-                  <p>
-                    Nous fournissons nos équipements de qualité pour le
-                    néttoyage.
-                  </p>
-                </div>
-                <div class="showed-content">
-                  <img src="assets/images/portfolio-image-3.png" alt="" />
-                  <h6>Nettoyage avec équipements</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <a href="#">
-              <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                <div class="hidden-content">
-                  <h4>Nettoyage sans équipements</h4>
-                  <p>
-                    Le client met à notre disposition le neccesaire pour le
-                    nettoyage.
-                  </p>
-                </div>
-                <div class="showed-content">
-                  <img src="assets/images/portfolio-image-4.png" alt="" />
-                  <h6>Nettoyage sans équipements</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="our-blog section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="section-heading">
-              <h2>
-                Les <em>Plus</em> de nos
-                <span>Services</span>
-              </h2>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="top-dec">
-              <img src="assets/images/blog-dec.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="left-image">
-              <a href="#"><img src="assets/images/big-blog-thumb.jpg" alt="Workspace Desktop" /></a>
-              <div class="info">
-                <div class="inner-content">
-                  <ul>
-                    <li><i class="fa fa-home"></i> Maisons</li>
-                    <li><i class="fa fa-building-o"></i> Appartements</li>
-                    <li><i class="fa fa-building"></i> Bâtiments</li>
-                  </ul>
-                  <h4>Nettoyage Résidentiel</h4>
-                  <p>
-                    Nous assurons un nettoyage complet et méticuleux pour
-                    créer un espace confortable et sain.
-                  </p>
-                  <div class="main-blue-button">
-                    <a href="#">Découvrir Plus</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="right-list">
-              <ul>
-                <li>
-                  <div class="left-content align-self-center">
-                    <h4>Nettoyage Commercial</h4>
-                    <p>
-                      Des bureaux aux centres commerciaux, nous offrons des
-                      services de nettoyage adaptés à votre entreprise.
-                    </p>
-                  </div>
-                  <div class="right-image">
-                    <img src="assets/images/blog-thumb-01.jpg" alt="" />
-                  </div>
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="/" class="logo">
+                <img src="assets/images/logo.png" alt="logo" />
+                <!-- <h4>MK<span>Cleaning</span></h4> -->
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Accueil</a>
                 </li>
-                <li>
-                  <div class="left-content align-self-center">
-                    <h4>Nettoyage Après Evènements</h4>
-                    <p>
-                      Après des évènements ou des travaux de construction,
-                      laissez-nous prendre en charge le nettoyage pour rendre
-                      votre espace propre.
-                    </p>
-                  </div>
-                  <div class="right-image">
-                    <img src="assets/images/blog-thumb-02.jpg" alt="" />
-                  </div>
+                <li class="scroll-to-section"><a href="#about">A Propos</a></li>
+                <li class="scroll-to-section">
+                  <a href="#services">Services</a>
                 </li>
-                <li>
-                  <div class="left-content align-self-center">
-                    <h4>Entretien des Espaces Verts</h4>
-                    <p>
-                      Nous proposons également des services d'entretien des
-                      espaces extérieurs pour environnement extérieur propre
-                      et agréable.
-                    </p>
-                  </div>
-                  <div class="right-image">
-                    <img src="assets/images/blog-thumb-03.jpg" alt="" />
+                <li class="scroll-to-section">
+                  <a href="#contact">Nous Contacter</a>
+                </li>
+                <li class="scroll-to-section">
+                  <div class="main-red-button">
+                    <a href="#contact">Souscrire Maintenant</a>
                   </div>
                 </li>
               </ul>
-            </div>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>
-              Contactez-Nous dès Aujourd'hui pour une Estimation Gratuite
-            </h2>
-            <p>
-              Chez MK Cleaning nous nous engageons à créer un environnement
-              propre et sain pour vous et vos proches ou pour votre
-              entreprise.
-            </p>
-            <div class="phone-info">
-              <h4>
-                Nos contacts :
-                <span><i class="fa fa-phone"></i>
-                  <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+237692707030">
-                    (+237) 692 70 70 30
-                  </a>
-                  <a aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/+237682186685">
-                    | 682 18 66 85
-                  </a>
-                </span>
-              </h4>
-            </div>
-            <div class="phone-info">
-              <h4>
-                Notre adresse :
-                <span><i class="fa fa-map-marker"></i>
-                  <a href="#">Yaoundé, face ISTAG Nsimeyong</a>
-                </span>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+    <div
+      class="main-banner wow fadeIn"
+      id="top"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Votre nom" autocomplete="on" required />
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Votre prénom" autocomplete="on"
-                    required />
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="tel" name="phone_number" id="phone_number" placeholder="Votre numéro de télephone"
-                    required="" />
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <select id="service" name="service" class="form-control">
-                    <option value="">
-                      Choisissez le service que vous souhaitez
-                    </option>
-                    <option value="Nettoyage Résidentiel">
-                      Nettoyage Résidentiel
-                    </option>
-                    <option value="Nettoyage Commercial">
-                      Nettoyage Commercial
-                    </option>
-                    <option value="Nettoyage Après Evènements">
-                      Nettoyage Après Evènements
-                    </option>
-                    <option value="Entretien des Espaces Verts">
-                      Entretien des Espaces Verts
-                    </option>
-                  </select>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="description" type="text" class="form-control" id="description"
-                    placeholder="Une description de votre demande..."></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-button">
-                    <span style="display: flex;align-items: center;justify-content: center">
-                      Obtenir un dévis
-                      &nbsp;
-                      <div id="loader" style="display: none;"> </div>
-                    </span>
-                  </button>
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <h6>Bienvenue chez MK Cleaning</h6>
+                  <h2>
+                    Votre Partenaire de <em>Confiance</em> pour un
+                    <span>Environnement </span>impeccable
+                  </h2>
+                  <p>
+                    Nous comprenons l'importance d'un espace propre et bien
+                    entretenu. Chez <b>MK Cleaning</b>, nous nous engageons à
+                    offrir des services de nettoyage exceptionnels pour répondre
+                    à vos besoins résidentiels et commerciaux.
+                  </p>
 
-                </fieldset>
+                  <form id="search" action="#contact" method="GET">
+                    <fieldset>
+                      <input
+                        type="tel"
+                        name="phone_number"
+                        class="phone_number"
+                        placeholder="Souscrire maintenant"
+                        autocomplete="off"
+                        disabled
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <button href="#" class="main-button">
+                        Nous contacter
+                      </button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="right-image wow fadeInRight"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <img src="assets/images/cleaning.png" alt="team meeting" />
+                </div>
               </div>
             </div>
-            <div class="contact-dec">
-              <img src="assets/images/contact-decoration.png" alt="" />
+          </div>
+          <div
+            class="col-lg-12 left-content header-text wow fadeInLeft"
+            data-wow-duration="1.2s"
+            data-wow-delay="1.3s"
+          >
+            <div
+              style="margin-bottom: -80px; text-align: center; margin-top: 80px"
+            >
+              <h2>Profitez d'un nettoyage de qualité professionnelle</h2>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>
-            © Copyright <span id="year"></span> MK Cleaning. Tous droits
-            reservés.
+    <div id="about">
+      <div class="about-us section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="left-image wow fadeIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.2s"
+              >
+                <img src="assets/images/about.png" alt="person graphic" />
+              </div>
+            </div>
+            <div class="col-lg-8 align-self-center">
+              <div class="services">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div
+                      class="item wow fadeIn"
+                      data-wow-duration="1s"
+                      data-wow-delay="0.5s"
+                    >
+                      <div class="icon">
+                        <img
+                          src="assets/images/service-icon-01.png"
+                          alt="reporting"
+                        />
+                      </div>
+                      <div class="right-text">
+                        <h4>Qualité Exceptionnelle</h4>
+                        <p>
+                          Notre équipe talentueuse garantie des résultats
+                          impeccables.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div
+                      class="item wow fadeIn"
+                      data-wow-duration="1s"
+                      data-wow-delay="0.7s"
+                    >
+                      <div class="icon">
+                        <img src="assets/images/service-icon-02.png" alt="" />
+                      </div>
+                      <div class="right-text">
+                        <h4>Flexibilité</h4>
+                        <p>
+                          Nous personnalisons nos services pour répondre à vos
+                          horaires.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div
+                      class="item wow fadeIn"
+                      data-wow-duration="1s"
+                      data-wow-delay="0.9s"
+                    >
+                      <div class="icon">
+                        <img src="assets/images/service-icon-03.png" alt="" />
+                      </div>
+                      <div class="right-text">
+                        <h4>Satisfaction Clientèle</h4>
+                        <p>
+                          Votre satisfaction est notre priorité absolue à chaque
+                          service.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div
+                      class="item wow fadeIn"
+                      data-wow-duration="1s"
+                      data-wow-delay="1.1s"
+                    >
+                      <div class="icon">
+                        <img src="assets/images/service-icon-04.png" alt="" />
+                      </div>
+                      <div class="right-text">
+                        <h4>Engagement Écologique</h4>
+                        <p>
+                          Nous utilisons des produits respectueux de
+                          l'environnement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <br />Développé par :
-            <a rel="nofollow" target="_blank" href="https://momscompanys.com">Mom's Company</a>
-          </p>
-
-          <p class="social-link">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </p>
+      <div class="our-services section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 align-self-center wow fadeInLeft"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <div class="left-image">
+                <img src="assets/images/about2.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-lg-6 wow fadeInRight"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <div class="section-heading">
+                <h2>
+                  Profitez d'une <em>Expérience</em> de Nettoyage
+                  <span>Professionnelle</span>
+                </h2>
+                <p>
+                  Nos services de nettoyage de qualité professionnelle sont
+                  conçus pour répondre à toutes vos attentes en matière de
+                  propreté et d'hygiène. Notre équipe expérimentée et hautement
+                  qualifiée utilise des techniques avancées, des équipements
+                  modernes et des produits de nettoyage écologiques pour
+                  garantir des résultats impeccables à chaque intervention.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="first-bar progress-skill-bar">
+                    <h4>Qualité Professionnelle</h4>
+                    <!-- <span>100%</span> -->
+                    <div class="filled-bar"></div>
+                    <div class="full-bar"></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="second-bar progress-skill-bar">
+                    <h4>Satisfaction du client</h4>
+                    <!-- <span>100%</span> -->
+                    <div class="filled-bar"></div>
+                    <div class="full-bar"></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="third-bar progress-skill-bar">
+                    <h4>Disponibilité et Flexibilité</h4>
+                    <!-- <span>100%</span> -->
+                    <div class="filled-bar"></div>
+                    <div class="full-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/templatemo-custom.js"></script>
 
-  <script>
-    document.getElementById('contact').addEventListener('submit', function (event) {
-      event.preventDefault();
+    <div id="services">
+      <div class="our-portfolio section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div
+                class="section-heading wow bounceIn"
+                data-wow-duration="1s"
+                data-wow-delay="0.2s"
+              >
+                <h2>
+                  Découvrez nos <em>Services</em> de
+                  <span>Nettoyage</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <a href="#">
+                <div
+                  class="item wow bounceInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="hidden-content">
+                    <h4>Nettoyage complet</h4>
+                    <p>Toutes les pièces et les surfaces seront néttoyées.</p>
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/portfolio-image-1.png" alt="" />
+                    <h6>Nettoyage complet</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <a href="#">
+                <div
+                  class="item wow bounceInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.4s"
+                >
+                  <div class="hidden-content">
+                    <h4>Nettoyage semi complet</h4>
+                    <p>
+                      Uniquement certaines pièces seront néttoyées selon le
+                      choix du client.
+                    </p>
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/portfolio-image-2.png" alt="" />
+                    <h6>Nettoyage semi complet</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <a href="#">
+                <div
+                  class="item wow bounceInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="hidden-content">
+                    <h4>Nettoyage avec équipements</h4>
+                    <p>
+                      Nous fournissons nos équipements de qualité pour le
+                      néttoyage.
+                    </p>
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/portfolio-image-3.png" alt="" />
+                    <h6>Nettoyage avec équipements</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <a href="#">
+                <div
+                  class="item wow bounceInUp"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.6s"
+                >
+                  <div class="hidden-content">
+                    <h4>Nettoyage sans équipements</h4>
+                    <p>
+                      Le client met à notre disposition le neccesaire pour le
+                      nettoyage.
+                    </p>
+                  </div>
+                  <div class="showed-content">
+                    <img src="assets/images/portfolio-image-4.png" alt="" />
+                    <h6>Nettoyage sans équipements</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="our-blog section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 wow fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.25s"
+            >
+              <div class="section-heading">
+                <h2>
+                  Les <em>Plus</em> de nos
+                  <span>Services</span>
+                </h2>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 wow fadeInDown"
+              data-wow-duration="1s"
+              data-wow-delay="0.25s"
+            >
+              <div class="top-dec">
+                <img src="assets/images/blog-dec.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.25s"
+            >
+              <div class="left-image">
+                <a href="#"
+                  ><img
+                    src="assets/images/big-blog-thumb.jpg"
+                    alt="Workspace Desktop"
+                /></a>
+                <div class="info">
+                  <div class="inner-content">
+                    <ul>
+                      <li><i class="fa fa-home"></i> Maisons</li>
+                      <li><i class="fa fa-building-o"></i> Appartements</li>
+                      <li><i class="fa fa-building"></i> Bâtiments</li>
+                    </ul>
+                    <h4>Nettoyage Résidentiel</h4>
+                    <p>
+                      Nous assurons un nettoyage complet et méticuleux pour
+                      créer un espace confortable et sain.
+                    </p>
+                    <div class="main-blue-button">
+                      <a href="#">Découvrir Plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.25s"
+            >
+              <div class="right-list">
+                <ul>
+                  <li>
+                    <div class="left-content align-self-center">
+                      <h4>Nettoyage Commercial</h4>
+                      <p>
+                        Des bureaux aux centres commerciaux, nous offrons des
+                        services de nettoyage adaptés à votre entreprise.
+                      </p>
+                    </div>
+                    <div class="right-image">
+                      <img src="assets/images/blog-thumb-01.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left-content align-self-center">
+                      <h4>Nettoyage Après Evènements</h4>
+                      <p>
+                        Après des évènements ou des travaux de construction,
+                        laissez-nous prendre en charge le nettoyage pour rendre
+                        votre espace propre.
+                      </p>
+                    </div>
+                    <div class="right-image">
+                      <img src="assets/images/blog-thumb-02.jpg" alt="" />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left-content align-self-center">
+                      <h4>Entretien des Espaces Verts</h4>
+                      <p>
+                        Nous proposons également des services d'entretien des
+                        espaces extérieurs pour environnement extérieur propre
+                        et agréable.
+                      </p>
+                    </div>
+                    <div class="right-image">
+                      <img src="assets/images/blog-thumb-03.jpg" alt="" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      const submitButton = document.getElementById('form-submit');
-      submitButton.disabled = true;
-      document.getElementById('loader').style.display = 'block';
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center wow fadeInLeft"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <div class="section-heading">
+              <h2>
+                Contactez-Nous dès Aujourd'hui pour une Estimation Gratuite
+              </h2>
+              <p>
+                Chez MK Cleaning nous nous engageons à créer un environnement
+                propre et sain pour vous et vos proches ou pour votre
+                entreprise.
+              </p>
+              <div class="phone-info">
+                <h4>
+                  Nos contacts :
+                  <span
+                    ><i class="fa fa-phone"></i>
+                    <a
+                      aria-label="Chat on WhatsApp"
+                      target="_blank"
+                      href="https://wa.me/+237692707030"
+                    >
+                      (+237) 692 70 70 30
+                    </a>
+                    <a
+                      aria-label="Chat on WhatsApp"
+                      target="_blank"
+                      href="https://wa.me/+237682186685"
+                    >
+                      | 682 18 66 85
+                    </a>
+                  </span>
+                </h4>
+              </div>
+              <div class="phone-info">
+                <h4>
+                  Notre adresse :
+                  <span
+                    ><i class="fa fa-map-marker"></i>
+                    <a href="#">Yaoundé, face ISTAG Nsimeyong</a>
+                  </span>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 wow fadeInRight"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.25s"
+          >
+            <form id="contact" action="" method="post">
+              <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      type="name"
+                      name="name"
+                      id="name"
+                      placeholder="Votre nom"
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input
+                      type="surname"
+                      name="surname"
+                      id="surname"
+                      placeholder="Votre prénom"
+                      autocomplete="on"
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input
+                      type="tel"
+                      name="phone_number"
+                      id="phone_number"
+                      placeholder="Votre numéro de télephone"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <select id="service" name="service" class="form-control">
+                      <option value="">
+                        Choisissez le service que vous souhaitez
+                      </option>
+                      <option value="Nettoyage Résidentiel">
+                        Nettoyage Résidentiel
+                      </option>
+                      <option value="Nettoyage Commercial">
+                        Nettoyage Commercial
+                      </option>
+                      <option value="Nettoyage Après Evènements">
+                        Nettoyage Après Evènements
+                      </option>
+                      <option value="Entretien des Espaces Verts">
+                        Entretien des Espaces Verts
+                      </option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea
+                      name="description"
+                      type="text"
+                      class="form-control"
+                      id="description"
+                      placeholder="Une description de votre demande..."
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">
+                      <span
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        Soumettre &nbsp;
+                        <div id="loader" style="display: none"></div>
+                      </span>
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="contact-dec">
+                <img src="assets/images/contact-decoration.png" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <p>
+              © Copyright <span id="year"></span> MK Cleaning. Tous droits
+              reservés.
 
+              <br />Développé par :
+              <a rel="nofollow" target="_blank" href="https://momscompanys.com"
+                >Mom's Company</a
+              >
+            </p>
 
-      const name = document.getElementById('name').value;
-      const surname = document.getElementById('surname').value;
-      const phoneNumber = document.getElementById('phone_number').value;
-      const service = document.getElementById('service').value;
+            <p class="social-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
 
-      const description = document.getElementById('description').value;
+    <script>
+      document
+        .getElementById("contact")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
+          const submitButton = document.getElementById("form-submit");
+          submitButton.disabled = true;
+          document.getElementById("loader").style.display = "block";
 
-      const formData = {
-        "records": [
-          {
-            "fields": {
-              "Noms": name,
-              "Prénoms": surname,
-              "Télephone": phoneNumber,
-              "Service souhaité": service,
-              "Decription": description
-            }
-          }
-        ]
-      };
+          const name = document.getElementById("name").value;
+          const surname = document.getElementById("surname").value;
+          const phoneNumber = document.getElementById("phone_number").value;
+          const service = document.getElementById("service").value;
 
-      const TOKEN = "patJFxNfy5ldoMn6w.611e72c3ed07415ce81653ad3c4fac1178c5c39da028d8138e799abedce6bb4f"
+          const description = document.getElementById("description").value;
 
-      fetch('https://api.airtable.com/v0/appZVSj1SR2iniQ1P/Cleaning', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${TOKEN}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-        .then(response => response.json())
-        .then(data => {
+          const formData = {
+            records: [
+              {
+                fields: {
+                  Noms: name,
+                  Prénoms: surname,
+                  Télephone: phoneNumber,
+                  "Service souhaité": service,
+                  Decription: description,
+                },
+              },
+            ],
+          };
 
-          submitButton.disabled = false;
-          document.getElementById('name').value = '';
-          document.getElementById('surname').value = '';
-          document.getElementById('phone_number').value = '';
-          document.getElementById('service').value = '';
-          document.getElementById('description').value = '';
+          const TOKEN =
+            "patJFxNfy5ldoMn6w.611e72c3ed07415ce81653ad3c4fac1178c5c39da028d8138e799abedce6bb4f";
 
-          document.getElementById('loader').style.display = 'none';
-          alert('Votre demande a été envoyée avec succès!');
-        })
-        .catch((error) => {
+          fetch("https://api.airtable.com/v0/appZVSj1SR2iniQ1P/Cleaning", {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${TOKEN}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              submitButton.disabled = false;
+              document.getElementById("name").value = "";
+              document.getElementById("surname").value = "";
+              document.getElementById("phone_number").value = "";
+              document.getElementById("service").value = "";
+              document.getElementById("description").value = "";
 
-          console.log(error);
-          submitButton.disabled = false;
-          document.getElementById('loader').style.display = 'none';
-          alert('Une erreur est survenue. Veuillez réessayer.');
+              document.getElementById("loader").style.display = "none";
+              alert("Votre demande a été envoyée avec succès !");
+            })
+            .catch((error) => {
+              console.log(error);
+              submitButton.disabled = false;
+              document.getElementById("loader").style.display = "none";
+              alert("Une erreur est survenue. Veuillez réessayer.");
+            });
         });
-    });
-  </script>
+    </script>
 
-  <script>
-    document.getElementById("year").innerText = new Date().getFullYear();
-  </script>
-</body>
-
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+  </body>
 </html>

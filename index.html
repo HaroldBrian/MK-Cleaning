@@ -116,20 +116,20 @@
                     à vos besoins résidentiels et commerciaux.
                   </p>
 
-                  <form id="search" action="#" method="GET">
+                  <form id="search" action="#contact" method="GET">
                     <fieldset>
                       <input
                         type="tel"
                         name="phone_number"
                         class="phone_number"
-                        placeholder="Votre numéro de télephone..."
+                        placeholder="Souscrire maintenant"
                         autocomplete="off"
-                        required
+                        disabled
                       />
                     </fieldset>
                     <fieldset>
-                      <button type="submit" class="main-button">
-                        Me contacter
+                      <button href="#" class="main-button">
+                        Nous contacter
                       </button>
                     </fieldset>
                   </form>
@@ -348,14 +348,12 @@
                   data-wow-delay="0.3s"
                 >
                   <div class="hidden-content">
-                    <h4>Nettoyage résidentiel</h4>
-                    <p>
-                      Pour une maison, un appartement ou une résidence complète.
-                    </p>
+                    <h4>Nettoyage complet</h4>
+                    <p>Toutes les pièces et les surfaces seront néttoyées.</p>
                   </div>
                   <div class="showed-content">
                     <img src="assets/images/portfolio-image-1.png" alt="" />
-                    <h6>Nettoyage résidentiel</h6>
+                    <h6>Nettoyage complet</h6>
                   </div>
                 </div>
               </a>
@@ -368,14 +366,15 @@
                   data-wow-delay="0.4s"
                 >
                   <div class="hidden-content">
-                    <h4>Nettoyage des bureaux</h4>
+                    <h4>Nettoyage semi complet</h4>
                     <p>
-                      Pour les bureaux, les centres commerciaux et sociétés.
+                      Uniquement certaines pièces seront néttoyées selon le
+                      choix du client.
                     </p>
                   </div>
                   <div class="showed-content">
                     <img src="assets/images/portfolio-image-2.png" alt="" />
-                    <h6>Nettoyage des bureaux</h6>
+                    <h6>Nettoyage semi complet</h6>
                   </div>
                 </div>
               </a>
@@ -388,15 +387,15 @@
                   data-wow-delay="0.5s"
                 >
                   <div class="hidden-content">
-                    <h4>Nettoyage après évènements</h4>
+                    <h4>Nettoyage avec équipements</h4>
                     <p>
-                      Pour les mariages, anniversaires, conférences et bien
-                      d'autres.
+                      Nous fournissons nos équipements de qualité pour le
+                      néttoyage.
                     </p>
                   </div>
                   <div class="showed-content">
                     <img src="assets/images/portfolio-image-3.png" alt="" />
-                    <h6>Nettoyage après évènements</h6>
+                    <h6>Nettoyage avec équipements</h6>
                   </div>
                 </div>
               </a>
@@ -409,14 +408,15 @@
                   data-wow-delay="0.6s"
                 >
                   <div class="hidden-content">
-                    <h4>Entretien des espaces verts</h4>
+                    <h4>Nettoyage sans équipements</h4>
                     <p>
-                      Pour créer un environnement extérieur propre et agréable.
+                      Le client met à notre disposition le neccesaire pour le
+                      nettoyage.
                     </p>
                   </div>
                   <div class="showed-content">
                     <img src="assets/images/portfolio-image-4.png" alt="" />
-                    <h6>Entretien des espaces verts</h6>
+                    <h6>Nettoyage sans équipements</h6>
                   </div>
                 </div>
               </a>
@@ -435,8 +435,8 @@
             >
               <div class="section-heading">
                 <h2>
-                  Quelques <em>Services</em> Déjà
-                  <span>Réalisés</span>
+                  Les <em>Plus</em> de nos
+                  <span>Services</span>
                 </h2>
               </div>
             </div>
@@ -553,7 +553,7 @@
               </p>
               <div class="phone-info">
                 <h4>
-                  Vous pouvez nous joindre au
+                  Nos contacts :
                   <span
                     ><i class="fa fa-phone"></i>
                     <a
@@ -562,16 +562,23 @@
                       href="https://wa.me/+237692707030"
                     >
                       (+237) 692 70 70 30
-                    </a></span
-                  >
+                    </a>
+                    <a
+                      aria-label="Chat on WhatsApp"
+                      target="_blank"
+                      href="https://wa.me/+237682186685"
+                    >
+                      | 682 18 66 85
+                    </a>
+                  </span>
                 </h4>
               </div>
               <div class="phone-info">
                 <h4>
-                  Disponible uniquement à
+                  Notre adresse :
                   <span
                     ><i class="fa fa-map-marker"></i>
-                    <a href="#">Yaoundé, Cameroun</a>
+                    <a href="#">Yaoundé, face ISTAG Nsimeyong</a>
                   </span>
                 </h4>
               </div>
@@ -677,10 +684,11 @@
             data-wow-delay="0.25s"
           >
             <p>
-              © Copyright 2024 MK Cleaning. Tous droits reservés.
+              © Copyright <span id="year"></span> MK Cleaning. Tous droits
+              reservés.
 
               <br />Développé par :
-              <a rel="nofollow" target="_blank" href="https://Momscompanys.com"
+              <a rel="nofollow" target="_blank" href="https://momscompanys.com"
                 >Mom's Company</a
               >
             </p>
@@ -701,5 +709,9 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/templatemo-custom.js"></script>
+
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
   </body>
 </html>
